@@ -120,16 +120,96 @@
 
 # radio button
 
-from tkinter import *
+# from tkinter import *
 
-window = Tk()
+# window = Tk()
 
-food = ["youtube", "facebook", "google"]
+# channel = ["youtube", "facebook", "google"]
+# channelImg = PhotoImage(file="./youtube.png")
 
-x = IntVar()
+# channelImage = [
+#     channelImg.subsample(8, 8),
+#     channelImg.subsample(8, 8),
+#     channelImg.subsample(8, 8),
+# ]
 
-for i in range(len(food)):
-    radioBtn = Radiobutton(window, text=food[i], variable=x, value=i)
-    radioBtn.pack()
 
-window.mainloop()
+# def order():
+#     if x.get() == 0:
+#         print("you are watching Youtube")
+#     elif x.get() == 1:
+#         print("you are watching Facebook")
+#     elif x.get() == 2:
+#         print("you are watching Google")
+#     else:
+#         print("what?")
+
+
+# x = IntVar()
+
+# for i in range(len(channel)):
+#     radioBtn = Radiobutton(
+#         window,
+#         text=channel[i],
+#         variable=x,
+#         value=i,
+#         image=channelImage[i],
+#         compound="left",
+#         indicatoron=0,
+#         width=400,
+#         command=order,
+#     )
+#     radioBtn.pack(anchor=W, padx=25, pady=10)
+
+# window.mainloop()
+
+
+# scale
+
+# from tkinter import *
+
+
+# def submit():
+#     print(f"現在溫度：{str(scale.get())}度")
+
+
+# window = Tk()
+
+# photo = PhotoImage(file="./youtube.png")
+# # photo = photo.subsample(2, 2)
+# label = Label(image=photo)
+# label.pack()
+
+# scale = Scale(
+#     window,
+#     from_=100,
+#     to=0,
+#     length=600,
+#     orient=VERTICAL,
+#     font=("Arial", 20),
+#     tickinterval=10,
+#     showvalue=0,
+#     resolution=5,
+#     troughcolor="steelblue",
+#     fg="red",
+#     bg="black",
+# )
+
+# scale.set((scale["from"] - scale["to"]) / 2 + scale["to"])
+
+# scale.pack()
+
+
+# dice = PhotoImage(file="./dices.png")
+# label = Label(image=dice)
+# label.pack()
+
+
+# button = Button(
+#     window,
+#     text="送出",
+#     command=submit,
+# )
+# button.pack()
+
+# window.mainloop()
